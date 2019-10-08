@@ -1,0 +1,357 @@
+Driver script for phase_find_common job phase_pharm_1_find_common
+Current time: Tue Oct 10 01:19:37 2017
+Host name: Davides-MacBook-Pro.local
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger/suites2017-3
+SCHRODINGER_JOBID=Davides-MacBook-Pro-0-59dc5868
+MMSHARE_EXEC=/opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+PHARMA_EXEC=/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64
+
+Invoking phase_find_common binary to do initial setup:
+/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64/phase_find_common /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip -JOB phase_pharm_1_find_common -JOBHOST localhost:1 -sites 4:5 -ex -miss 0.5 -fraction -prefer 5 -redun 0.5 -keep 10 -inplace -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -noinactive -nobedroc -setup
+
+********************************************************************************
+
+Host name: Davides-MacBook-Pro.local
+SCHRODINGER=/opt/schrodinger/suites2017-3
+SCHRODINGER_JOBID=Davides-MacBook-Pro-0-59dc5868
+MMSHARE_EXEC=/opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+PHARMA_EXEC=/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64
+
+********************************************************************************
+
+phase_find_common: Tue Oct 10 01:19:43 2017
+
+Project archive = "/Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip"
+Options:
+-JOB phase_pharm_1_find_common
+-JOBHOST localhost:1
+-ex
+-fraction
+-inplace
+-keep 10
+-logm 1.0
+-miss 0.5
+-nobedroc
+-noinactive
+-prefer 5
+-redun 0.5
+-select 1.0
+-setup
+-site 1.0
+-sites 4:5
+-vect 1.0
+-vol 1.0
+
+Doing setup for subjobs
+
+Unzipping /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip to directory phase_pharm_1_find_common_setup . . .
+
+Number of actives = 5
+Number of active groups = 5
+Maximum allowed misses = 2
+Number of reference ligands = 5
+Number of CPUs requested = 1
+Writing subjob template lists to phase_pharm_1_find_common_templates.csv
+
+Removing directory phase_pharm_1_find_common_setup
+
+CPU time = 0.03 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+Control returned to phase_find_common driver script
+
+Launching phase_find_common subjobs . . .
+
+[running at reduced cpu priority]
+
+Running subjobs on hosts:
+  localhost (Max: 1)
+Number of jobs:       1
+Max retries per job:  3
+Max allowed failures: unlimited
+Run with -LOCAL:      False
+Verbosity:            normal
+
+Starting JobDJ...
+
+Keep one job on driver host: False
+JobDJ columns:
+  C: Number of completed subjobs
+  A: Number of active subjobs (e.g., submitted, running)
+  W: Number of waiting/pending subjobs
+
+C A W | Activity  JobId  JobName  JobHost
+- - - | --------- -----------------------
+0 1 0 | launched  Davides-MacBook-Pro-0-59dc5871 phase_pharm_1_find_common_sub_1 localhost [Davides-MacBook-Pro]
+1 0 0 | finished  Davides-MacBook-Pro-0-59dc5871 phase_pharm_1_find_common_sub_1 localhost [Davides-MacBook-Pro]
+
+All jobs have completed.
+
+1 of 1 job(s) succeeded; 0 job(s) failed.
+
+
+Invoking phase_find_common binary to combine subjobs:
+/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64/phase_find_common /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip -JOB phase_pharm_1_find_common -JOBHOST localhost:1 -sites 4:5 -ex -miss 0.5 -fraction -prefer 5 -redun 0.5 -keep 10 -inplace -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -noinactive -nobedroc -cleanup
+
+********************************************************************************
+
+Host name: Davides-MacBook-Pro.local
+SCHRODINGER=/opt/schrodinger/suites2017-3
+SCHRODINGER_JOBID=Davides-MacBook-Pro-0-59dc5868
+MMSHARE_EXEC=/opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+PHARMA_EXEC=/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64
+
+********************************************************************************
+
+phase_find_common: Tue Oct 10 01:19:57 2017
+
+Project archive = "/Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip"
+Options:
+-JOB phase_pharm_1_find_common
+-JOBHOST localhost:1
+-cleanup
+-ex
+-fraction
+-inplace
+-keep 10
+-logm 1.0
+-miss 0.5
+-nobedroc
+-noinactive
+-prefer 5
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 4:5
+-vect 1.0
+-vol 1.0
+
+Combining results of completed subjobs . . .
+
+*** Contents of phase_pharm_1_find_common_sub_1.log ***
+
+Driver script for phase_find_common subjob phase_pharm_1_find_common_sub_1
+Current time: Tue Oct 10 01:19:48 2017
+Host name: Davides-MacBook-Pro.local
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger/suites2017-3
+SCHRODINGER_JOBID=Davides-MacBook-Pro-0-59dc5871
+MMSHARE_EXEC=/opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+PHARMA_EXEC=/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64
+
+Invoking phase_find_common binary to find and score common pharmacophores:
+/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64/phase_find_common /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip -JOB phase_pharm_1_find_common -sites 4:5 -ex -miss 0.5 -fraction -prefer 5 -redun 0.5 -keep 10 -inplace -site 1.0 -vect 1.0 -vol 1.0 -select 1.0 -logm 1.0 -noinactive -nobedroc -subjob phase_pharm_1_find_common_sub_1
+
+********************************************************************************
+
+Host name: Davides-MacBook-Pro.local
+SCHRODINGER=/opt/schrodinger/suites2017-3
+SCHRODINGER_JOBID=Davides-MacBook-Pro-0-59dc5871
+MMSHARE_EXEC=/opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+PHARMA_EXEC=/opt/schrodinger/suites2017-3/phase-v5.2/bin/Darwin-x86_64
+
+********************************************************************************
+
+phase_find_common: Tue Oct 10 01:19:53 2017
+
+Project archive = "/Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip"
+Options:
+-JOB phase_pharm_1_find_common
+-ex
+-fraction
+-inplace
+-keep 10
+-logm 1.0
+-miss 0.5
+-nobedroc
+-noinactive
+-prefer 5
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 4:5
+-subjob phase_pharm_1_find_common_sub_1
+-vect 1.0
+-vol 1.0
+
+Unzipping /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip to directory phase_pharm_1_find_common_sub_1_project . . .
+
+********************************************************************************
+
+Aligning actives to 6 conformers of reference ligand mol_1 (1 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 5 active groups . . .
+Searching for pharmacophores that match at least 4 active groups . . .
+Searching for pharmacophores that match at least 3 active groups . . .
+Recovering 4-point pharmacophores that matched 3 active groups . . .
+
+Refining matches and alignments . . .
+20% complete
+
+Surviving common pharmacophore counts for reference ligand mol_1:
+4-point: 1
+5-point: 0
+  Total: 1
+
+Running totals for all reference ligands assigned to this subjob:
+4-point: 1
+5-point: 0
+  Total: 1
+
+********************************************************************************
+
+Aligning actives to 8 conformers of reference ligand mol_2 (2 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 5 active groups . . .
+Searching for pharmacophores that match at least 4 active groups . . .
+Searching for pharmacophores that match at least 3 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_2:
+4-point: 0
+5-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+4-point: 1
+5-point: 0
+  Total: 1
+
+********************************************************************************
+
+Aligning actives to 13 conformers of reference ligand mol_3 (3 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 5 active groups . . .
+Searching for pharmacophores that match at least 4 active groups . . .
+Searching for pharmacophores that match at least 3 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_3:
+4-point: 0
+5-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+4-point: 1
+5-point: 0
+  Total: 1
+
+********************************************************************************
+
+Aligning actives to 4 conformers of reference ligand mol_4 (4 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 5 active groups . . .
+Searching for pharmacophores that match at least 4 active groups . . .
+Searching for pharmacophores that match at least 3 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_4:
+4-point: 0
+5-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+4-point: 1
+5-point: 0
+  Total: 1
+
+********************************************************************************
+
+Aligning actives to 13 conformers of reference ligand mol_5 (5 of 5) . . .
+20% complete
+40% complete
+60% complete
+80% complete
+100% complete
+
+Searching for pharmacophores that match at least 5 active groups . . .
+Searching for pharmacophores that match at least 4 active groups . . .
+Searching for pharmacophores that match at least 3 active groups . . .
+
+Surviving common pharmacophore counts for reference ligand mol_5:
+4-point: 0
+5-point: 0
+  Total: 0
+
+Running totals for all reference ligands assigned to this subjob:
+4-point: 1
+5-point: 0
+  Total: 1
+
+********************************************************************************
+
+All reference ligands assigned to this subjob have been processed.
+
+Total number of active --> reference alignments performed = 1482
+
+Final surviving common pharmacophore counts:
+4-point: 1
+5-point: 0
+  Total: 1
+
+Saving common pharmacophores to directory phase_pharm_1_find_common_sub_1_hypotheses . . .
+Zipping phase_pharm_1_find_common_sub_1_hypotheses to phase_pharm_1_find_common_sub_1_hypotheses.zip . . .
+Removing directory phase_pharm_1_find_common_sub_1_hypotheses
+Removing directory phase_pharm_1_find_common_sub_1_project
+
+CPU time = 0.30 sec
+Elapsed time = 1.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common subjob phase_pharm_1_find_common_sub_1 finished
+Current time: Tue Oct 10 01:19:54 2017
+Elapsed time = 0:00:06.53
+phase_find_common results for phase_pharm_1_find_common_sub_1 are complete
+
+*** End of phase_pharm_1_find_common_sub_1.log ***
+
+Unzipping /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip to directory phase_pharm_1_find_common_cleanup . . .
+
+Processing phase_pharm_1_find_common_sub_1 results . . .
+Unzipping phase_pharm_1_find_common_sub_1_hypotheses.zip . . .
+Importing pharmacophores from phase_pharm_1_find_common_sub_1_hypotheses/template_0.pharm . . .
+Removing directory phase_pharm_1_find_common_sub_1_hypotheses
+
+Merging pharmacophores from all subjobs . . .
+
+Final surviving common pharmacophore counts:
+4-point: 1
+5-point: 0
+  Total: 1
+
+Compiling final results and writing to directory phase_pharm_1_find_common_find_common . . .
+20% complete
+
+Zipping phase_pharm_1_find_common_find_common to phase_pharm_1_find_common_find_common.zip . . .
+Removing directory phase_pharm_1_find_common_find_common
+Removing directory phase_pharm_1_find_common_cleanup
+
+CPU time = 0.14 sec
+Elapsed time = 0.00 sec
+
+phase_find_common successfully completed
+
+Driver script for phase_find_common job phase_pharm_1_find_common finished
+Current time: Tue Oct 10 01:19:57 2017
+Elapsed time = 0:00:20.27
+phase_find_common results for phase_pharm_1_find_common are complete

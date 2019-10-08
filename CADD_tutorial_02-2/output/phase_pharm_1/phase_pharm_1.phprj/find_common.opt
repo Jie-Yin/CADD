@@ -1,0 +1,18 @@
+-JOB phase_pharm_1_find_common
+-JOBHOST localhost:1
+-ex
+-fraction
+-inplace
+-keep 10
+-logm 1.0
+-miss 0.5
+-nobedroc
+-noinactive
+-prefer 5
+-proj /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phzip
+-redun 0.5
+-select 1.0
+-site 1.0
+-sites 4:5
+-vect 1.0
+-vol 1.0

@@ -1,0 +1,32 @@
+###############################################################################################
+#                                                                                             #
+#            Ligand Records File.  All text following a pound sign "#" is ignored.            #
+#                                                                                             #
+###############################################################################################
+LIGAND_DIR = ligands    #  PHARM_SET  LIGAND_GROUP  MUST_MATCH  QSAR_SET  ACTIVITY  1D_VALUE  #
+###############################################################################################
+LIGAND_NAME = mol_1     #  active     1             false       test      missing   0.0       #
+LIGAND_NAME = mol_2     #  active     2             false       test      missing   0.0       #
+LIGAND_NAME = mol_3     #  active     3             false       test      missing   0.0       #
+LIGAND_NAME = mol_4     #  active     4             false       test      missing   0.0       #
+LIGAND_NAME = mol_5     #  active     5             false       test      missing   0.0       #
+LIGAND_NAME = mol_6     #  none       6             false       test      missing   0.0       #
+LIGAND_NAME = mol_7     #  none       7             false       test      missing   0.0       #
+LIGAND_NAME = mol_8     #  none       8             false       test      missing   0.0       #
+LIGAND_NAME = mol_9     #  none       9             false       test      missing   0.0       #
+LIGAND_NAME = mol_10    #  none       10            false       test      missing   0.0       #
+LIGAND_NAME = mol_11    #  none       11            false       test      missing   0.0       #
+LIGAND_NAME = mol_12    #  none       12            false       test      missing   0.0       #
+LIGAND_NAME = mol_13    #  none       13            false       test      missing   0.0       #
+LIGAND_NAME = mol_14    #  none       14            false       test      missing   0.0       #
+LIGAND_NAME = mol_15    #  none       15            false       test      missing   0.0       #
+LIGAND_NAME = mol_16    #  none       16            false       test      missing   0.0       #
+LIGAND_NAME = mol_17    #  none       17            false       test      missing   0.0       #
+LIGAND_NAME = mol_18    #  none       18            false       test      missing   0.0       #
+LIGAND_NAME = mol_19    #  none       19            false       test      missing   0.0       #
+LIGAND_NAME = mol_20    #  inactive   20            false       test      missing   0.0       #
+LIGAND_NAME = mol_21    #  inactive   21            false       test      missing   0.0       #
+LIGAND_NAME = mol_22    #  inactive   22            false       test      missing   0.0       #
+LIGAND_NAME = mol_23    #  inactive   23            false       test      missing   0.0       #
+LIGAND_NAME = mol_24    #  inactive   24            false       test      missing   0.0       #
+LIGAND_NAME = mol_25    #  inactive   25            false       test      missing   0.0       #

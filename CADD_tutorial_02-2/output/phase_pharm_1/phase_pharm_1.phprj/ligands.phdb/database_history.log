@@ -1,0 +1,8 @@
+Tue Oct 10 01:19:27 2017
+phase_database /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phprj/ligands.phdb import phase_pharm_1_import -NOJOBID -connect -fd phase_pharm_1.def -i phase_pharm_1.maegz -multi -new -stereo -verbose
+
+Tue Oct 10 01:19:32 2017
+phase_database /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phprj/ligands.phdb revise phase_pharm_1_sites -NOJOBID -role parent -setup -sites
+
+Tue Oct 10 01:19:35 2017
+phase_database /Users/davideprovasi/.schrodinger/tmp/phase_pharm_1/phase_pharm_1.phprj/ligands.phdb revise phase_pharm_1_sites -cleanup -role parent
