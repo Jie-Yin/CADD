@@ -1,0 +1,3 @@
+2,22
+-in /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/output/qsar.cnv/mlr/mlr_01/mlr_01.csv -omod /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/output/qsar.cnv/mlr/mlr_01/mlr_01.mlr -build -y "Activity (-log[IC50])" -useUID /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/output/qsar.cnv/mlr/mlr_01/mlr_01.gui -fieldOut name -best -nx 10 -steps 1000 -start 0.5 -stop 0.05 -lt /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/output/qsar.cnv/mlr/mlr_01/mlr_01.sub
+

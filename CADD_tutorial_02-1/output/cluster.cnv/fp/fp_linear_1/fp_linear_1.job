@@ -1,0 +1,3 @@
+3,22
+-ismi /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/cluster.cnv/fp/fp_linear_1/fp_linear_1.smi -o /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/cluster.cnv/fp/fp_linear_1/fp_linear_1.fp -fptype linear -atomtype 10 -minpath 0 -path 7 -ring 14 -scaling 0 -HOST localhost      -AUTOINC 
+Davides-MacBook-Pro-0-59dc5989

@@ -1,0 +1,55 @@
+[Davides-MacBook-Pro.local]
+Driver script for parent canvasFPGen job fp_linear_1
+Current time: Tue Oct 10 01:24:25 2017
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger/suites2017-3
+SCHRODINGER_JOBID=Davides-MacBook-Pro-0-59dc5989
+MMSHARE_EXEC=/opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+CANVAS_EXEC=/opt/schrodinger/suites2017-3/canvas-v3.3/bin/Darwin-x86_64
+
+
+Only 1 subjob to launch: Running locally on parent job CPU
+
+Command = "/opt/schrodinger/suites2017-3/utilities/canvasFPGen" -ismi "/Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/cluster.cnv/fp/fp_linear_1/fp_linear_1.smi"  -SUBJOB -fptype linear -atomtype 10 -minpath 0 -path 7 -ring 14 -scaling 0 -o "fp_linear_1_subjob_1_out.fp" -JOB fp_linear_1_subjob_1 -WAIT
+
+[Davides-MacBook-Pro.local]
+JobId: Davides-MacBook-Pro-0-59dc598a
+
+Subjob fp_linear_1_subjob_1 completed
+
+The following is from each subjob log file:
+[Davides-MacBook-Pro.local]
+
+Driver script for canvasFPGen job fp_linear_1_subjob_1
+Current time: Tue Oct 10 01:24:26 2017
+Number of CPUs requested = 1
+SCHRODINGER=/opt/schrodinger/suites2017-3
+SCHRODINGER_JOBID=Davides-MacBook-Pro-0-59dc598a
+MMSHARE_EXEC=/opt/schrodinger/suites2017-3/mmshare-v3.9/bin/Darwin-x86_64
+CANVAS_EXEC=/opt/schrodinger/suites2017-3/canvas-v3.3/bin/Darwin-x86_64
+
+Command: /opt/schrodinger/suites2017-3/canvas-v3.3/bin/Darwin-x86_64/canvasFPGen  -ismi "/Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/cluster.cnv/fp/fp_linear_1/fp_linear_1.smi" -fptype linear -atomtype 10 -minpath 0 -path 7 -ring 14 -scaling 0 -o "fp_linear_1_subjob_1_out.fp"   
+postprocessing... done
+total unique bits 63686
+
+Fingerprints generated for all 1144 structures.
+
+CPU time=2.07 sec
+
+canvasFPGen successfully completed
+
+Driver script for canvasFPGen subjob fp_linear_1_subjob_1 finished
+Current time: Tue Oct 10 01:24:29 2017
+Elapsed time = 00:00:03
+
+Combining fingerprints from each subjob: 
+"/opt/schrodinger/suites2017-3/canvas-v3.3/bin/Darwin-x86_64/canvasCombine" -list "fpList" -format FP -out "fp_linear_1.fp"
+command: "/opt/schrodinger/suites2017-3/utilities/canvasFPCombine" -nocoalesce -i "fp_linear_1_subjob_1_out.fp" -cat -o "fp_linear_1.fp"
+
+CPU time = 0.40 sec
+
+canvasFPCombine successfully completed.
+
+Driver script for parent canvasFPGen job fp_linear_1 finished
+Current time: Tue Oct 10 01:24:34 2017
+Elapsed time = 00:00:09

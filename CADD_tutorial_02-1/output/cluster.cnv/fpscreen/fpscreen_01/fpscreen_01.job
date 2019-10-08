@@ -1,0 +1,3 @@
+3,22
+-ifp /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/cluster.cnv/fpscreen/fpscreen_01/fpscreen_01_1.fp -ocsv /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/cluster.cnv/fpscreen/fpscreen_01/fpscreen_01.csv -ifp2 /Users/davideprovasi/Desktop/CADD17/CADD_new_material/Tutorials/02-1-Chemoinformatics_1/cluster.cnv/fpscreen/fpscreen_01/fpscreen_01_2.fp -metric tanimoto
+
